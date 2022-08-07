@@ -1,20 +1,24 @@
+import java.util.Scanner
 fun main() {
     // Kotlin Program to Add three Random Numbers
-
+    val reader = Scanner(System.`in`)
     // First number
-    var first = (1..10).shuffled().first();
-    println("First number = "+first);
+    print("Enter a number 1 : ")
+    var first:Int = reader.nextInt()
 
     // Second number
-    var second = (1..10).shuffled().first();
-    println("Second number = "+second);
+    print("Enter a number 2 : ")
+    var second :Int = reader.nextInt()
 
     // Third number
-    var third = (1..10).shuffled().first();
-    println("Third number = "+third);
+    print("Enter a number 3 : ")
+    var third :Int = reader.nextInt()
 
     // Sum operation
     var sum = first + second +third;
     // Print result
-    println("Sum of three Random Numbers is "+sum);
+    println(" - - - - - - - - - - - - - - - - - - - - ");
+    println("  SUM = $first + $second + $third = $sum .");
+    println(" - - - - - - - - - - - - - - - - - - - - ");
+
 }
